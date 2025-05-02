@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+@layer base {
+  /* Fonte para textos INTER */
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  a,
+  b,
+  strong,
+  span {
+    font-family: "Inter", sans-serif;
+  }
+
+  /* Box-Sizing para divs */
+  div {
+    @apply box-border;
+  }
+}
+
+@utility bg-uber {
+  background: url('/src/assets/bguber.png');
+  @apply h-max;
+}
+@utility bg-city {
+  background: url('/src/assets/bg-city.png');
+  @apply h-max;
+}
+@utility text-a {
+  @apply text-gray-700;
+  @apply border-b-2;
+  @apply border-slate-300;
+  @apply hover:border-slate-600;
+  @apply duration-300;
+  @apply self-start;
+  @apply pb-1;
+}
